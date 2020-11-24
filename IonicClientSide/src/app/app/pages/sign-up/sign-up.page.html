@@ -1,0 +1,59 @@
+<ion-header style="background-color:cyan;">
+
+    <ion-title>{{ 'sign up' }}</ion-title>
+
+</ion-header>
+
+<ion-item>
+    <ion-label fixed>{{ 'first name' }}</ion-label>
+    <ion-input type="text" [(ngModel)]="user.FirstName" name="first"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label fixed>{{ 'last name' }}</ion-label>
+    <ion-input type="text" [(ngModel)]="user.LastName"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label fixed>{{ 'phone' }}</ion-label>
+    <ion-input type="phone" [(ngModel)]="user.Phone"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label fixed>{{ 'email' }}</ion-label>
+    <ion-input type="email" [(ngModel)]="user.Email"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label fixed>{{ 'job description' }}</ion-label>
+    <ion-input type="text" [(ngModel)]="user.Job"></ion-input>
+</ion-item>
+
+<ion-list>
+    <ion-radio-group value="biff" [(ngModel)]="user.Gender">
+        <ion-list-header>
+            <ion-label>gender</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>male</ion-label>
+            <ion-radio slot="start" value="biff"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>female</ion-label>
+            <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+
+    </ion-radio-group>
+</ion-list>‏
+
+
+<ion-item>
+    <ion-label fixed>{{ 'password' }}</ion-label>
+    <ion-input type="password" [(ngModel)]="user.Password"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label fixed>{{ 'confirm password' }}</ion-label>
+    <ion-input type="password"></ion-input>
+</ion-item>
+
+<ion-button name="doSignUp" (click)="signUp()">sign up</ion-button>
+<ion-button natme="toHome" (click)="toHomePage()">To Home Page</ion-button>
+<ion-button name="toMyAccoun" (click)="toMyAccountPage()">to my account</ion-button>
