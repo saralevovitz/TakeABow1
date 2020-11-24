@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>myAccount</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{ 'welcome to ' }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-router-outlet id="main"></ion-router-outlet>
+
+
+    <ion-button expand="block">exit</ion-button>
+
+    <ion-button expand="full" color="success" (click)="addFeedback()">add feedback</ion-button>
+    <ion-button expand="full" color="success" (click)="toMyFeedbacks()">view my feedbacks</ion-button>
+    <ion-button expand="full" color="success"> personal imformation </ion-button>
+    <ion-button expand="full" color="success">invetations</ion-button>
+
+
+
+</ion-content>
