@@ -1,0 +1,38 @@
+<ion-header style="background-color: cyan;">
+
+    <ion-title>new-feedback</ion-title>
+
+</ion-header>
+
+<ion-content>
+    <header style="direction: ltr;">
+        <button name="sendFeedback" (click)="sendFeedback()">
+            <ion-icon name="checkmark-sharp" style="height: 50px; width: 50px; position:static;"></ion-icon>
+        </button>
+
+    </header>
+
+    <body style="direction: rtl; text-align: center;">
+        <ion-item>
+            <ion-label fixed>{{ 'send to' }}</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+        <!-- <ion-item>
+            <ion-label fixed>{{ 'פידבק:' }}</ion-label>
+            <ion-input type="text-area"></ion-input>
+        </ion-item> -->
+
+        <ion-item>
+            <ion-label>{{ 'feedback' }}</ion-label>
+            <ion-textarea placeholder="placeholder" style="height: 200px;"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>anonymous</ion-label>
+            <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+    </body>
+
+
+
+</ion-content>
